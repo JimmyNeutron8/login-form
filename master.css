@@ -1,0 +1,75 @@
+:root {
+  --border-color: #ccc;
+  --page-bg-color: #fff;
+  --card-bg-color: #fbfbfb;
+  --main-text-color: #444;
+  --action-color: #38f;
+}
+
+body {
+  background-color: var(--page-bg-color);
+  color: var(--main-text-color);
+  font-family: 'Lato', sans-serif;
+  font-size: 22px;
+  font-weight: 300;
+    -webkit-font-smoothing: antialiased;
+   -moz-osx-font-smoothing: grayscale;
+}
+
+.form-card {
+  margin: 50px auto;
+  padding: 40px;
+  max-width: 400px;
+  border: 1px solid var(--border-color);
+  background-color: var(--card-bg-color);
+  opacity: 0;
+  transition: opacity 1s;
+}
+
+.account-form {
+  border-top: 1px solid var(--border-color);
+}
+
+.form-card h2 {
+  text-align: center;
+  margin-bottom: 40px;
+  font-weight: 300;
+}
+
+.form-card input {
+  display: block;
+  margin-top: 12px;
+  width: 100%;
+  padding: 8px;
+  font-size: 0.8em;
+  border: 1px solid var(--border-color);
+  border-radius: 3px;
+}
+
+.form-card label {
+  display: block;
+  margin-top: 35px;
+}
+
+.form-card button {
+  display: block;
+  margin: 55px auto 30px auto;
+  padding: 0 20px;
+  height: 50px;
+  background-color: var(--action-color);
+  color: white;
+  font-size: 1em;
+}
+
+.footnote {
+  font-size: 16px;
+  text-align: center;
+}
+
+@media (max-width: 576px) {
+  .form-card {
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+  }
+}
