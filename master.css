@@ -21,9 +21,11 @@ body {
   padding: 40px;
   max-width: 400px;
   border: 1px solid var(--border-color);
+  border-radius: 2px;
   background-color: var(--card-bg-color);
   opacity: 0;
   transition: opacity 1s;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
 }
 
 .account-form {
