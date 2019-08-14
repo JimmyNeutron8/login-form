@@ -1,15 +1,16 @@
 :root {
-  --border-color: #ccc;
-  --page-bg-color: #fff;
-  --card-bg-color: #fbfbfb;
+  --border-color: #e0e0e0;
+  --page-bg-color: #f0f0f0;
+  --card-bg-color: #fafafa;
   --main-text-color: #444;
   --action-color: #38f;
+  --lighter-action-color: #49f;
 }
 
 body {
   background-color: var(--page-bg-color);
   color: var(--main-text-color);
-  font-family: 'Lato', sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-size: 22px;
   font-weight: 300;
     -webkit-font-smoothing: antialiased;
@@ -21,11 +22,11 @@ body {
   padding: 40px;
   max-width: 400px;
   border: 1px solid var(--border-color);
-  border-radius: 2px;
+  border-radius: 5px;
   background-color: var(--card-bg-color);
   opacity: 0;
   transition: opacity 1s;
-  box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 6px 16px 0 rgba(0, 0, 0, 0.1);
 }
 
 .account-form {
@@ -45,7 +46,7 @@ body {
   padding: 8px;
   font-size: 0.8em;
   border: 1px solid var(--border-color);
-  border-radius: 3px;
+  border-radius: 5px;
 }
 
 .form-card label {
@@ -61,7 +62,21 @@ body {
   background-color: var(--action-color);
   color: white;
   font-size: 1em;
-  border-radius: 4px;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 3px 8px 0 rgba(0, 0, 0, 0.3);
+  transition: box-shadow 0.2s, background-color 0.1s;
+  text-transform: uppercase;
+}
+
+.form-card button:hover {
+  box-shadow: 0 4px 16px 0 rgba(0, 0, 0, 0.4);
+}
+
+.form-card button:active {
+  background-color: var(--lighter-action-color);
+  box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.2);
+  outline: none;
 }
 
 .footnote {
